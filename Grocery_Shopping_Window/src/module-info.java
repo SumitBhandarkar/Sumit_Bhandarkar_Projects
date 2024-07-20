@@ -5,5 +5,5 @@
  * @author DELL
  *
  */
-module GroceryBuyingWindow {
+module Grocery_Shopping_Window {
 }

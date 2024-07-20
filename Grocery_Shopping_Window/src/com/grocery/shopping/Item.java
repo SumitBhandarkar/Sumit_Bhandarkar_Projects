@@ -1,14 +1,14 @@
-package com.grocery;
+package com.grocery.shopping;
 
-public class GroceryItem {
+public class Item {
     private String name;
     private double price;
-    private String category;
+    private String unit;
 
-    public GroceryItem(String name, double price, String category) {
+    public Item(String name, double price, String unit) {
         this.name = name;
         this.price = price;
-        this.category = category;
+        this.unit = unit;
     }
 
     public String getName() {
@@ -19,12 +19,12 @@ public class GroceryItem {
         return price;
     }
 
-    public String getCategory() {
-        return category;
+    public String getUnit() {
+        return unit;
     }
 
     @Override
     public String toString() {
-        return name + " - " + price + " rs";
+        return name + " - " + price + " rs/" + unit;
     }
 }
